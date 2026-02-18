@@ -35,7 +35,8 @@ The system automatically:
 
 ## Architecture
 
-![Architecture Diagram]![architecture](AI_glue_copilot-1.png)
+<img width="1536" height="1024" alt="AI_glue_copilot" src="https://github.com/user-attachments/assets/a99db191-7469-40f6-bf25-937f1bda0831" />
+
 
 ### Architecture Flow
 
@@ -62,24 +63,7 @@ The system automatically:
 
 ## Repository Structure
 
-ai-glue-debugging-copilot/
-│
-├── architecture/
-│ └── architecture-diagram.png
-│
-├── lambda/
-│ ├── lambda_handler.py
-│ └── requirements.txt
-│
-├── eventbridge/
-│ └── glue_failure_rule.json
-│
-├── IAM-policies/
-│ ├── lambda_trust_policy.json
-│ └── lambda_permissions_policy.json
-│
-├── deployment_steps.md
-└── README.md
+<img width="565" height="655" alt="repository" src="https://github.com/user-attachments/assets/2058ebb5-ad07-451b-886f-4de5ebf7bd62" />
 
 
 ---
@@ -107,53 +91,59 @@ ai-glue-debugging-copilot/
   "suggested_fix": "Verify the S3 bucket name and ensure it exists before running the Glue job.",
   "confidence_score": 0.94
 }
-Key Engineering Challenges Solved
-Packaging Lambda without incompatible dependencies
+```
+## Key Engineering Challenges Solved
+- Packaging Lambda without incompatible dependencies
 
-Handling PowerShell JSON escaping issues
+- Handling PowerShell JSON escaping issues
 
-Configuring IAM pass-role permissions
+- Configuring IAM pass-role permissions
 
-Dynamically retrieving CloudWatch log streams using jobRunId
+- Dynamically retrieving CloudWatch log streams using jobRunId
 
-Managing Lambda timeouts for external API calls
+- Managing Lambda timeouts for external API calls
 
-Enforcing structured JSON validation of LLM output
+- Enforcing structured JSON validation of LLM output
 
-Deployment
+---
+
+## Deployment
 See deployment_steps.md for full reproducible setup instructions including:
 
-IAM role creation
+- IAM role creation
 
-Lambda deployment
+- Lambda deployment
 
-EventBridge rule configuration
+- EventBridge rule configuration
 
-Glue failure simulation
+- Glue failure simulation
 
-OpenAI API setup
+- OpenAI API setup
 
-Future Improvements
-Persist AI analysis results in DynamoDB
+---
 
-Slack / Teams alert integration
+## Future Improvements
+- Persist AI analysis results in DynamoDB
 
-Automated retry suggestions
+- Slack / Teams alert integration
 
-Monitoring dashboard UI
+- Automated retry suggestions
 
-Multi-tenant SaaS version
+- Monitoring dashboard UI
 
-👤 Author
+- Multi-tenant SaaS version
+
+---
+
+## Author
 Santhoshini Ch
+
 Cloud & Data Engineering | AI-Native Platform Development
 
 Focused on building event-driven, serverless systems that integrate LLMs into real-world infrastructure workflows.
 
 
----
-
-# 🔥 What I Fixed
+# What I Fixed
 
 - Proper markdown headers
 - Removed broken image references
@@ -166,4 +156,4 @@ Focused on building event-driven, serverless systems that integrate LLMs into re
 - Cleaned Future Improvements
 - Structured IAM section clearly
 
----
+  ---
